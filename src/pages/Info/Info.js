@@ -1,11 +1,11 @@
 import { Container, Grid } from '@material-ui/core';
 import React, { useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PersonalDetails from '../../../components/PersonalDetails/PersonalDetails';
-import ProjectsTable from '../../../components/ProjectsTable/ProjectsTable';
-import Spinner from '../../../components/Spinner/Spinner';
+import ProjectsTable from '../../components/ProjectsTable/ProjectsTable';
+import PersonalDetails from '../../components/PersonalDetails/PersonalDetails';
+import Spinner from '../../components/Spinner/Spinner';
 
-import { fetchProjects } from '../../../redux/actions/projects';
+import { fetchProjects } from '../../redux/actions/projects';
 
 const Info = () => {
 	const isLoading = useSelector((state) => state.loading.isLoading);

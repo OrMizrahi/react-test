@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import Info from '../pages/login/info/Info';
-import Login from '../pages/login/Login';
+import Info from '../pages/Info/Info';
+import Login from '../pages/Login/Login';
 import { checkForToken } from '../redux/actions/auth';
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
